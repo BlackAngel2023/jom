@@ -1,0 +1,29 @@
+<?php	class conexion{	private $servidor;
+		private $usuario;
+		private $contrasena;
+		private $basedatos;
+		public $tabla;
+		public $sql;
+		public $driver;
+		public function __construct(){
+		    $this->servidor = "localhost";
+			$this->usuario ="root";
+			$this->contrasena = "12345678";
+			$this->basedatos = "prueba";
+			$this->tabla = "datos";
+			$this->sql = "select stock y, nombre x from prueba";
+			$this->driver ="mysql";
+
+		}
+	function conectar(){
+		if($this->driver=="mysql"){
+			$this->conexion = new mysqli($this->servidor,$this->usuario,$this->contrasena,$this->basedatos);
+			
+			$this->conexion->set_charset("utf8");
+		}
+		}
+		function cerrar(){
+			$this->conexion->close();	
+		}
+	}
+?> 

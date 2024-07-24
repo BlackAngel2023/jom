@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+	<title>Ingrese los datos de conexion</title>
+	<!-- set your website meta description and keywords -->
+	<meta name="description" content="Add your business website description here">
+	<meta name="keywords" content="Add your business website keywords here">
+	<!-- set your website favicon -->
+	<link href="favicon.html" rel="icon">	
+	
+	<!-- Bootstrap Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Font Awesome Stylesheets -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Template Main Stylesheets -->
+	<link rel="stylesheet" href="css/contact-form.css" type="text/css">	
+	
+</head>
+
+<body>
+	
+	<section id="contact-form-section" class="form-content-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="tab-content">
+					<div class="col-sm-12">
+						<div class="item-wrap">
+							<div class="row">
+								
+								<div class="col-sm-12">
+									<div class="item-content colBottomMargin">
+										<div class="item-info"> 
+											<h2 class="item-title text-center">Ingrese los Datos de Conexión a la Base de Datos</h2>
+											
+										</div><!--End item-info -->
+										
+								   </div><!--End item-content -->
+								</div><!--End col -->
+								<div class="col-md-12">
+								
+								
+								<form id="contactForm" name="contactform" data-toggle="validator" class="popup-form" action="crear_archivo.php" method="POST">
+												<div class="row">
+													<div id="msgContactSubmit" class="hidden"></div>
+													<div class="form-group col-sm-6">
+														<div class="help-block with-errors"></div>
+														<input name="server" id="server" placeholder="Servidor*" class="form-control" type="text" > 
+														<div class="input-group-icon"><i class="fa fa-user"></i></div>
+													</div><!-- end form-group -->
+													<div class="form-group col-sm-6">
+														<div class="help-block with-errors"></div>
+														<input name="usuario" id="usuario" placeholder="Usuario Base de Datos*" class="form-control" type="text" > 
+														<div class="input-group-icon"><i class="fa fa-user"></i></div>
+													</div><!-- end form-group -->
+													<div class="form-group col-sm-6">
+														<div class="help-block with-errors"></div>
+														<input name="password" id="password" placeholder="Password Base de Datos*"  class="form-control" type="text" >
+														<div class="textarea input-group-icon"><i class="fa fa-pencil"></i></div>
+													</div><!-- end form-group -->
+													<div class="form-group col-sm-6">
+														<div ></div>
+														<input name="bd" id="bd" placeholder="Nombre Base De Datos*" class="form-control" type="text">
+														<div class="textarea input-group-icon"><i class="fa fa-pencil"></i></div>
+													</div><!-- end form-group -->
+													<div class="form-group col-sm-6">
+														<div class="help-block with-errors"></div>
+														<input name="driver" id="driver" placeholder="driver*" class="form-control" type="text">
+														<div class="input-group-icon"><i class="fa fa-book"></i></div> 
+													</div><!-- end form-group -->
+													<div class="form-group col-sm-6">
+														<div ></div>
+														<input name="tabla" id="tabla" placeholder="Nombre de la tabla*" class="form-control" type="text">
+														<div class="textarea input-group-icon"><i class="fa fa-pencil"></i></div>
+													</div><!-- end form-group -->
+														<div class="form-group col-sm-12">
+														<div class="help-block with-errors"></div>
+														<textarea rows="3" name="sql" id="sql" placeholder="SQL debes  hacer la consulta con los nombre de las columnas Y y X*" class="form-control" ></textarea>
+														<div class="textarea input-group-icon"><i class="fa fa-pencil"></i></div>
+													</div><!-- end form-group -->
+													
+													<div class="form-group last col-sm-12">
+														<button type="submit" id="submit" class="btn btn-custom"><i class='fa fa-envelope'></i> Enviar</button>
+													</div><!-- end form-group -->	
+											
+													<span class="sub-text">* Campos requeridos</span>
+													<div class="clearfix"></div>
+												</div><!-- end row -->
+											</form><!-- end form -->
+											
+											
+									
+									
+								  
+								
+								</div>
+							</div><!--End row -->
+							
+						
+								
+							
+							<!-- Popup end -->
+							
+						</div><!-- end item-wrap -->
+					</div><!--End col -->
+				</div><!--End tab-content -->
+			</div><!--End row -->
+		</div><!--End container -->
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</body>
+</html>
